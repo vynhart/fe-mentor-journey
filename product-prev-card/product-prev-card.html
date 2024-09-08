@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat";
+        min-height: 100vh;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      article {
+        border-radius: 16px;
+        overflow: hidden;
+        min-height: 300px;
+        max-width: 300px;
+      }
+
+      article header {
+        background-color: blue;
+        min-height: 200px;
+      }
+
+      article main {
+        min-height: 300px;
+        padding: 20px;
+        padding-top: 2em;
+        background-color: hsl(0, 0%, 100%);
+      }
+
+      main h1 {
+        font-family: "Fraunces";
+        line-height: 1em;
+      }
+
+      main p {
+        font-size: 14px;
+        font-size: 0.7em;
+        line-height: 1.5em;
+      }
+
+      .category {
+        letter-spacing: 0.2em;
+        font-size: 0.8em;
+      }
+
+      .price {
+        margin-block-start: 16px;
+      }
+
+      .main-price {
+        font-family: "Fraunces";
+        color: hsl(158, 36%, 37%);
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .markup-price {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0.5em;
+        font-size: 0.8em;
+        text-decoration: line-through;
+        margin-inline-start: 16px;
+        color: hsl(228, 12%, 48%);
+      }
+
+      footer {
+        margin-top: 16px;
+      }
+
+      footer button {
+        width: 100%;
+        height: 40px;
+        border: none;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        background-color: hsl(158, 36%, 37%);
+        border-radius: 6px;
+      }
+
+      .icon {
+        font-size: 1.2em;
+      }
+
+      button span {
+        vertical-align: top;
+      }
+
+      @media (min-width: 600px) {
+        article {
+          display: flex;
+          max-width: 100%;
+        }
+
+        article > * {
+          width: 220px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <img src="" alt="" />
+      </header>
+      <main>
+        <section class="category">
+          <span>PERFUME</span>
+        </section>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Oliver
+          Polge, Perfumer-Creator for the House of CHANNEL.
+        </p>
+        <section class="price">
+          <span class="main-price">$149.99</span
+          ><span class="markup-price">$169.99</span>
+        </section>
+        <footer>
+          <button>
+            <span class="icon material-symbols-outlined"> shopping_cart </span>
+            <span class="button-text">Add to Cart</span>
+          </button>
+        </footer>
+      </main>
+    </article>
+  </body>
+</html>
